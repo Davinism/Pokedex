@@ -8,6 +8,7 @@ const PokemonMiddleware = store => next => action => {
       API.fetchAllPokemon(success);
       break;
     case ACTIONS.POKEDEX_CONSTANTS.REQUEST_POKEMON:
+      debugger;
       const success1 = data => store.dispatch(ACTIONS.receivePokemon(data));
       API.fetchPokemon(action.pokemon, success1);
       break;

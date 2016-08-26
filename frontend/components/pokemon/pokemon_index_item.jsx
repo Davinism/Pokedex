@@ -3,6 +3,7 @@ import { withRouter } from 'react-router';
 
 const PokemonIndexItem = ({router, pokemon}) => {
 
+  
   const _handleClick = () => {
     router.push(`/pokemon/${pokemon.id}`);
   };
