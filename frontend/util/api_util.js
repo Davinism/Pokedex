@@ -6,6 +6,10 @@ export const fetchAllPokemon = (success) => {
   });
 };
 
-export const receiveAllPokemon = (data) => {
-  console.log(data);
+export const fetchPokemon = (pokemon, success) => {
+  $.ajax({
+    method: "GET",
+    url: `api/pokemon/${pokemon.id}`,
+    success
+  });
 };

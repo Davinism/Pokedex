@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const store = configureStore();
   window.store = store;
   // API.fetchAllPokemon((pokemon) => store.dispatch(ACTIONS.receiveAllPokemon(pokemon)));
+  // debugger;
+  // API.fetchPokemon(store.getState().pokemons[1], (pokemon) => store.dispatch(ACTIONS.receivePokemon(pokemon)));
   const root = document.getElementById("root");
   ReactDOM.render(<Root store={store} />, root);
-
 });

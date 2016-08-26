@@ -1390,9 +1390,8 @@ ActiveRecord::Base.transaction do
     stats
   end
 
-  Pokemon.create!(pokemon.shuffle)
+  Pokemon.create!(pokemon)
   Pokemon.all.each do |pokemon|
     3.times { create_random_toy!(pokemon) }
   end
 end
-

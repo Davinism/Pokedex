@@ -9,11 +9,11 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = dispatch => ({
-  requestAllPokemon: () => dispatch(ACTIONS.requestAllPokemon())
-});
+// const mapDispatchToProps = dispatch => ({
+//   requestAllPokemon: () => dispatch(ACTIONS.requestAllPokemon())
+// });
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+  mapStateToProps
+  // mapDispatchToProps
 )(PokemonIndex);
